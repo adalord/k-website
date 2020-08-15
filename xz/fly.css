@@ -1,4 +1,5 @@
 @charset "utf-8";
+
 html,
 body {
 	padding: 0;
@@ -48,3 +49,11 @@ body {
 	right: 10px;
 	top: 15px;
 }
+/* Chrome all / Safari all /opera15+*/ 
+-webkit-user-select: none;   
+/* Firefox all */  
+-moz-user-select: none;     
+/* IE 10+ */ 
+-ms-user-select: none;       
+/* 通用 */
+user-select: none;
