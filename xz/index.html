@@ -3,17 +3,24 @@
 <head>
 	<title>k-的小网站</title>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="shortcut icon" type="image/x-icon" href="image/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="fly.css">
 	<script type="text/javascript" src="paper-full.min.js"></script>
+	<script src="./live2d.js"></script>
 </head>
 <body>
 
 	<canvas id="triangle-lost-in-space" resize="true"style="position:absolute;z-index:-2;"></canvas>
-	<div class="div-center">当你追逐任何一颗流星的时候</div>
-	<div class="div-center-small">When u are chasing a meteor</div>
-	<div class="div-center">你将永远忙碌</div>
-	<div class="div-center-small">u will be always busy</div>
+	<div class="div-center">当你看着自己的时候</div>
+	<div class="div-center-small">When u look at yourself</div>
+	<div class="div-center">你才能静静的看清全世界</div>
+	<div class="div-center-small">u can see the world quietly</div>
+
+	<div class="model-container">
+	  <canvas width="280" height="500" id="model"></canvas>
+	</div>
 	<script type="text/javascript">
 		paper.install(window);
 		var SQRT_3 = Math.pow(3, 0.5);
@@ -190,6 +197,20 @@
 		    keepInView(item);
 		  }
 		};
+	</script>
+
+	
+	<script>
+		//dog
+		// loadlive2d("model", "https://cdn.jsdelivr.net/gh/QiShaoXuan/live2DModel@1.0.0/live2d-widget-model-wanko/assets/wanko.model.json");
+		//black cat
+		// loadlive2d("model", "https://cdn.jsdelivr.net/gh/QiShaoXuan/live2DModel@1.0.0/live2d-widget-model-hijiki/assets/hijiki.model.json");
+		//white cat
+		// loadlive2d("model","https://cdn.jsdelivr.net/gh/QiShaoXuan/live2DModel@1.0.0/live2d-widget-model-tororo/assets/tororo.model.json");
+		//宇宙人
+		// loadlive2d("model","https://cdn.jsdelivr.net/gh/QiShaoXuan/live2DModel@1.0.0/live2d-widget-model-ni-j/assets/ni-j.model.json");
+		loadlive2d("model","https://cdn.jsdelivr.net/gh/QiShaoXuan/live2DModel@1.0.0/live2d-widget-model-haruto/assets/haruto.model.json");
+		// loadlive2d("model","https://cdn.jsdelivr.net/gh/QiShaoXuan/live2DModel@1.0.0/live2d-widget-model-miku/assets/miku.model.json");
 	</script>
 </body>
 </html>

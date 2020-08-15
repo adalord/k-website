@@ -30,3 +30,21 @@ body {
 	margin-bottom:8px;
 	font-family: Trebuchet MS;
 }
+/*.model-container{
+    position: absolute;
+    left: 50%;
+    margin-left: -140px;
+    top: 35%;
+}*/
+#model {
+	position: fixed;
+	right: 0px;
+	bottom: 0;
+	z-index: 99999;
+	pointer-events: none;
+}
+.url-container {
+	position: fixed;
+	right: 10px;
+	top: 15px;
+}
