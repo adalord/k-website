@@ -10,7 +10,7 @@
 	<script type="text/javascript" src="paper-full.min.js"></script>
 	<script src="./live2d.js"></script>
 </head>
-<body>
+<body oncontextmenu="return false;" onselectstart="return false">
 
 	<canvas id="triangle-lost-in-space" resize="true"style="position:absolute;z-index:-2;"></canvas>
 	<div class="div-center">当你看着自己的时候</div>
@@ -22,6 +22,9 @@
 	  <canvas width="280" height="500" id="model"></canvas>
 	</div>
 	<script type="text/javascript">
+		//禁止页面选择以及鼠标右键
+		document.oncontextmenu=function(){return false;}; 
+		document.onselectstart=function(){return false;};
 		paper.install(window);
 		var SQRT_3 = Math.pow(3, 0.5);
 		var triangle, D, mousePos, position;
@@ -209,7 +212,8 @@
 		// loadlive2d("model","https://cdn.jsdelivr.net/gh/QiShaoXuan/live2DModel@1.0.0/live2d-widget-model-tororo/assets/tororo.model.json");
 		//宇宙人
 		// loadlive2d("model","https://cdn.jsdelivr.net/gh/QiShaoXuan/live2DModel@1.0.0/live2d-widget-model-ni-j/assets/ni-j.model.json");
-		loadlive2d("model","https://cdn.jsdelivr.net/gh/QiShaoXuan/live2DModel@1.0.0/live2d-widget-model-haruto/assets/haruto.model.json");
+		// loadlive2d("model","https://cdn.jsdelivr.net/gh/QiShaoXuan/live2DModel@1.0.0/live2d-widget-model-haruto/assets/haruto.model.json");
+		loadlive2d("model","./live2d-widget-model-haruto/assets/haruto.model.json");
 		// loadlive2d("model","https://cdn.jsdelivr.net/gh/QiShaoXuan/live2DModel@1.0.0/live2d-widget-model-miku/assets/miku.model.json");
 	</script>
 </body>
